@@ -200,6 +200,6 @@ vt$Votación=as.integer(vt$Votación)
 txt=txt[,c("slug","id","activo","curul","video_url","partido","partido_id","partidoP","provincia","provincia_id","tipo","nombre","nombre1","nombre2","genero","comision","twitter","video_texto","urlImagen","urlDetalle","csvDetalle")]
 txt$activo=as.numeric(txt$activo)
 
-write.csv(x = vt,"asamblea_votaciones.csv",row.names = F)
-write.csv(x = txt,"asambleistas.csv",row.names = F)
+write.csv(x = vt,"asamblea_votaciones.csv",row.names = F,fileEncoding = "UTF-8")
+write.csv(x = txt,"asambleistas.csv",row.names = F,fileEncoding = "UTF-8")
 
